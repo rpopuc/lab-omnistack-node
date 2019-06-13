@@ -35,6 +35,9 @@ module.exports = {
             image: fileName,
         });
 
+        // Emite a atualização do post
+        req.io.emit('post', post);
+
         return res.json(post);
     },
 }
