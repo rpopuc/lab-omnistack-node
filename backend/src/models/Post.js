@@ -1,5 +1,7 @@
 const mongoose = require('mongoose');
 
+// Define o esquema de dados
+// para gravação de Post
 const PostSchema = new mongoose.Schema({
     author: String,
     place: String,
