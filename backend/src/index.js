@@ -31,7 +31,8 @@ app.use((req, res, next) => {
 // através da rota /files
 app.use('/files', express.static(path.resolve(__dirname, '..', 'uploads', 'resized')));
 
-// Utiliza CORS
+// Utiliza CORS, para tornar a aplicação
+// acessível aplicações de domínios externos
 app.use(cors());
 
 // Configura as rotas da aplicação
