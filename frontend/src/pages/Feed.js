@@ -49,7 +49,7 @@ class Feed extends Component {
 
                             <p>
                                 {post.description}
-                                <span>{post.hashtag}</span>
+                                <span>{post.hashtags}</span>
                             </p>
                         </footer>
                     </article>
