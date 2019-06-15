@@ -9,7 +9,6 @@ import like from '../assets/like.svg';
 import comment from '../assets/comment.svg';
 import send from '../assets/send.svg';
 
-
 class Feed extends Component {
     state = {
         feed: [],
