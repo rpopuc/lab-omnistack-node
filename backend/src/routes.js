@@ -1,11 +1,11 @@
 const express = require('express');
-const multer = require('multer');
+const Multer = require('multer');
 const uploadConfig = require('./config/upload');
 const PostController = require('./controllers/PostController');
 const LikeController = require('./controllers/LikeController');
 
 const routes = new express.Router();
-const upload = new multer(uploadConfig);
+const upload = new Multer(uploadConfig);
 
 // Define a rota de listagem de Posts
 routes.get('/posts', PostController.index);
